@@ -56,6 +56,12 @@ window.onload = function(){
     }
 
     // 6 do Microsoft vlozte pouze zamestnance s pozicí Marketing nebo zamestnance s mestem zacinajicím na San
+
+    for (let person of persons) {
+      if (person.position === 'Marketing' || person.city.startsWith('San')) {
+          microsoft.zamestnanci.push(person);
+      }
+    }
     // 7 firmy vlozte do pole 
     // 8 projdete cyklem vsechny firmy a vypiste jejich zamestnance do console
     // 9 pushnete do spolecne repo do vetve pod svym jménem 
