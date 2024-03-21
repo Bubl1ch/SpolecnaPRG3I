@@ -65,8 +65,18 @@ window.onload = function(){
     // 7 firmy vlozte do pole
     
     let firmy = [meta, apple, microsoft];
-    
+
     // 8 projdete cyklem vsechny firmy a vypiste jejich zamestnance do console
+
+    for (let firma of firmy) {
+      console.log(`Zaměstnanci firmy ${firma.name}:`);
+      for (let zamestnanec of firma.zamestnanci) {
+          console.log(zamestnanec);
+      }
+      console.log("---------------");
+    }
+  
+
     // 9 pushnete do spolecne repo do vetve pod svym jménem 
 
 }
