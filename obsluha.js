@@ -62,7 +62,10 @@ window.onload = function(){
           microsoft.zamestnanci.push(person);
       }
     }
-    // 7 firmy vlozte do pole 
+    // 7 firmy vlozte do pole
+    
+    let firmy = [meta, apple, microsoft];
+    
     // 8 projdete cyklem vsechny firmy a vypiste jejich zamestnance do console
     // 9 pushnete do spolecne repo do vetve pod svym jménem 
 
