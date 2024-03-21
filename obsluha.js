@@ -49,6 +49,12 @@ window.onload = function(){
 
     // vse pomoci cyklů, filtrů apod.
     // 4 Do firmy Meta vlozte zamestnance s pozicí Software a věkem do 50 let 
+    persons.forEach(person => {
+      if (person.position === 'Software' && person.age <= 50) {
+          let employee = new Employee(person.id, person.name, person.age, person.city, person.position);
+          meta.employees.push(employee);
+      }
+  });
     // 5 Do Apple vlozte zamestnance s pozicí Software nebo Hardware
     // 6 do Microsoft vlozte pouze zamestnance s pozicí Marketing nebo zamestnance s mestem zacinajicím na San
     // 7 firmy vlozte do pole 
