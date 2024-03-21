@@ -13,26 +13,24 @@ window.onload = function(){
         { id: 10, name: 'Emma', age: 33, city: 'San Diego' , position:  'Hardware'}
       ];
 
+      let employees = [];
+
       // komenty ponechejte a pod koment vzdy dejte jen cast kodu ktera tomu odpovída
       // po kazdem bodě commitněte do gitu
 
       // 1. pomocí foreach cyklu na persons poli, 
       // do pole employees vytvorte nove zamestnance pomoci new Employee
-    let employees = [];
-
-
-    // 2. Vypiste do konzole pouze zamestnance kteří mají věk nad třicet
-
-
-    // 3 Vytvorte tri firmy Meta, Apple, Microsoft
-
-
-    // vse pomoci cyklů, filtrů apod.
-    // 4 Do firmy Meta vlozte zamestnance s pozicí Software a věkem do 50 let 
-    // 5 Do Apple vlozte zamestnance s pozicí Software nebo Hardware
-    // 6 do Microsoft vlozte pouze zamestnance s pozicí Marketing nebo zamestnance s mestem zacinajicím na San
-    // 7 firmy vlozte do pole 
-    // 8 projdete cyklem vsechny firmy a vypiste jejich zamestnance do console
-    // 9 pushnete do spolecne repo do vetve pod svym jménem 
-
+      persons.forEach(person => {
+        let newEmployee = new Employee(person.name, person.age, person.city);
+        employees.push(newEmployee);
+      });
+      // 2. Vypiste do konzole pouze zamestnance kteří mají věk nad třicet
+      // 3 Vytvorte tri firmy Meta, Apple, Microsoft
+      // vse pomoci cyklů, filtrů apod.
+      // 4 Do firmy Meta vlozte zamestnance s pozicí Software a věkem do 50 let 
+      // 5 Do Apple vlozte zamestnance s pozicí Software nebo Hardware
+      // 6 do Microsoft vlozte pouze zamestnance s pozicí Marketing nebo zamestnance s mestem zacinajicím na San
+      // 7 firmy vlozte do pole 
+      // 8 projdete cyklem vsechny firmy a vypiste jejich zamestnance do console
+      // 9 pushnete do spolecne repo do vetve pod svym jménem    
 }
