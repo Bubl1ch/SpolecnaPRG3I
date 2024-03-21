@@ -60,6 +60,7 @@ window.onload = function(){
       }
   });
     // 7 firmy vlozte do pole 
+    let companiesArray = [meta, apple, microsoft];
     // 8 projdete cyklem vsechny firmy a vypiste jejich zamestnance do console
     // 9 pushnete do spolecne repo do vetve pod svym jménem 
 
