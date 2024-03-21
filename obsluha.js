@@ -29,20 +29,22 @@ window.onload = function(){
           this.age = age;
           this.city = city;
           this.position = position;
-      }
-  }
-  persons.forEach(person => {
+      }}
+
+    persons.forEach(person => {
       let employee = new Employee(person.id, person.name, person.age, person.city, person.position);
       employees.push(employee);
-  });
+    }
+    );
   
-
     // 2. Vypiste do konzole pouze zamestnance kteří mají věk nad třicet
-
-
+    employees.forEach(employee => {
+      if (employee.age > 30) {
+          console.log(employee);
+      }
+     });
     // 3 Vytvorte tri firmy Meta, Apple, Microsoft
-
-
+    
     // vse pomoci cyklů, filtrů apod.
     // 4 Do firmy Meta vlozte zamestnance s pozicí Software a věkem do 50 let 
     // 5 Do Apple vlozte zamestnance s pozicí Software nebo Hardware
