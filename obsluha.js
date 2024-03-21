@@ -22,7 +22,20 @@ window.onload = function(){
     });
       // do pole employees vytvorte nove zamestnance pomoci new Employee
     let employees = [];
-
+    class Employee {
+      constructor(id, name, age, city, position) {
+          this.id = id;
+          this.name = name;
+          this.age = age;
+          this.city = city;
+          this.position = position;
+      }
+  }
+  persons.forEach(person => {
+      let employee = new Employee(person.id, person.name, person.age, person.city, person.position);
+      employees.push(employee);
+  });
+  
 
     // 2. Vypiste do konzole pouze zamestnance kteří mají věk nad třicet
 
