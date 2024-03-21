@@ -25,7 +25,7 @@ window.onload = function(){
     });
   
     // 2. Vypiste do konzole pouze zamestnance kteří mají věk nad třicet
-    
+    console.log("Zaměstnanci, kteří maji věk větší jak 30 let.")
     for (let person of persons) {
       if (person.age > 30) {
           console.log(person);
