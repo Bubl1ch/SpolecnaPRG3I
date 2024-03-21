@@ -21,21 +21,11 @@ window.onload = function(){
         console.log(person.name);
     });
       // do pole employees vytvorte nove zamestnance pomoci new Employee
-    let employees = [];
-    class Employee {
-      constructor(id, name, age, city, position) {
-          this.id = id;
-          this.name = name;
-          this.age = age;
-          this.city = city;
-          this.position = position;
-      }}
-
+    
     persons.forEach(person => {
       let employee = new Employee(person.id, person.name, person.age, person.city, person.position);
       employees.push(employee);
-    }
-    );
+  });
   
     // 2. Vypiste do konzole pouze zamestnance kteří mají věk nad třicet
     employees.forEach(employee => {
@@ -44,7 +34,12 @@ window.onload = function(){
       }
      });
     // 3 Vytvorte tri firmy Meta, Apple, Microsoft
-    
+    let companies = [];
+['Meta', 'Apple', 'Microsoft'].forEach(companyName => {
+    let company = new Company(companyName);
+    companies.push(company);
+});
+  
     // vse pomoci cyklů, filtrů apod.
     // 4 Do firmy Meta vlozte zamestnance s pozicí Software a věkem do 50 let 
     // 5 Do Apple vlozte zamestnance s pozicí Software nebo Hardware
