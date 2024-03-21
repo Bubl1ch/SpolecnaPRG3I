@@ -62,6 +62,12 @@ window.onload = function(){
     // 7 firmy vlozte do pole 
     let companiesArray = [meta, apple, microsoft];
     // 8 projdete cyklem vsechny firmy a vypiste jejich zamestnance do console
+    companiesArray.forEach(company => {
+      console.log(`Employees of ${company.name}:`);
+      company.employees.forEach(employee => {
+          console.log(employee);
+      });
+  });
     // 9 pushnete do spolecne repo do vetve pod svym jménem 
 
 }
