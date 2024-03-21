@@ -33,7 +33,10 @@ window.onload = function(){
     }
 
     // 3 Vytvorte tri firmy Meta, Apple, Microsoft
-
+    
+    let meta = new Firma('Meta', '123 Main Street');
+    let apple = new Firma('Apple', '456 Park Avenue');
+    let microsoft = new Firma('Microsoft', '789 Elm Street');
 
     // vse pomoci cyklů, filtrů apod.
     // 4 Do firmy Meta vlozte zamestnance s pozicí Software a věkem do 50 let 
