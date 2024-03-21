@@ -47,7 +47,7 @@ window.onload = function(){
   console.log(apple);
   console.log(microsoft);
 
-    // vse pomoci cyklů, filtrů apod.
+    
     // 4 Do firmy Meta vlozte zamestnance s pozicí Software a věkem do 50 let 
     persons.forEach(person => {
       if (person.position === 'Software' && person.age <= 50) {
@@ -70,6 +70,18 @@ window.onload = function(){
       }
   });
     // 7 firmy vlozte do pole 
+    function Company(name) {
+      this.name = name;
+      this.employees = [];
+  }
+  
+
+  let meta = new Company('Meta');
+  let apple = new Company('Apple');
+  let microsoft = new Company('Microsoft');
+  
+
+  let companies = [meta, apple, microsoft];
     // 8 projdete cyklem vsechny firmy a vypiste jejich zamestnance do console
     // 9 pushnete do spolecne repo do vetve pod svym jménem 
 
