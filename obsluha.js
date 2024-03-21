@@ -17,6 +17,9 @@ window.onload = function(){
       // po kazdem bodě commitněte do gitu
 
       // 1. pomocí foreach cyklu na persons poli, 
+      persons.forEach(person => {
+        console.log(person.name);
+    });
       // do pole employees vytvorte nove zamestnance pomoci new Employee
     let employees = [];
 
