@@ -73,7 +73,6 @@ window.onload = function(){
       for (let zamestnanec of firma.zamestnanci) {
           console.log(zamestnanec);
       }
-      console.log("---------------");
     }
   
 
