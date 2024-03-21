@@ -56,6 +56,12 @@ window.onload = function(){
       }
   });
     // 5 Do Apple vlozte zamestnance s pozicí Software nebo Hardware
+    persons.forEach(person => {
+      if (person.position === 'Software' || person.position === 'Hardware') {
+          let employee = new Employee(person.id, person.name, person.age, person.city, person.position);
+          apple.employees.push(employee);
+      }
+  });
     // 6 do Microsoft vlozte pouze zamestnance s pozicí Marketing nebo zamestnance s mestem zacinajicím na San
     // 7 firmy vlozte do pole 
     // 8 projdete cyklem vsechny firmy a vypiste jejich zamestnance do console
